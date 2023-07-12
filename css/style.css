@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*Variáveis*/
+
+:root {
+  --borda: 2px solid #000;
+}
+
+/* GRID*/
+
+body {
+  font-family: arial;
+  color: #000;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "cabecalho"
+    "main"
+    "rodape";
+  height: 100vh;
+  margin: 0;
+}
+
+/* CABEÇALHO*/
+
+header {
+  display: flex;
+  grid-area: cabecalho;
+  /* border: 2px solid yellowgreen; */
+  background-color: #ff6b81;
+  height: 680px;
+  flex-direction: column;
+  align-items: center; 
+}
+
+figure {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 13px;
+  margin: 0;
+  align-items: center;  
+}
+
+.supe {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  /* border: 2px solid blue; */
+  justify-content: space-between;
+}
+
+.logo {
+  /* border: 1px solid black; */
+  height: 40px;
+}
+
+figure h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.btn1 {
+  width: 186px;
+  height: 40px;
+  background: none;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.esq {  
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid brown; */
+  justify-content: center;
+  height: 400px;
+}
+
+.texto > h1 {
+  display: flex;
+  font-size: 29px;
+  font-family: helvetica, serif;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.texto > h5 {
+  color: #fff;
+  font-size: 12px;
+  justify-items: space-evenly;
+}
+
+.infer {
+  display: flex;
+  width: 85%;
+  padding: 6% 0;
+  align-items: center;
+}
+
+.dir > img{
+  width: 90%;
+  display: flex;
+}
+
+.texto {
+  display: flex;
+  font-size: 29px;
+  font-family: helvetica, serif;
+  font-weight: bolder;
+  color: #fff;
+  height: 220px;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.texto > h5 {
+  color: #fff;
+  font-size: 12px;
+}
+
+.btn2 {
+  /* border: 2px solid chartreuse; */
+  display: flex;
+}
+
+.btn_app {
+  color: #ff6b81;
+  background-color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 5px;
+  font-weight: 750;
+  margin-right: 13px;
+}
+
+.btn_google{
+  color: #fff;
+  background-color: #ff6b81;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 5px;
+  font-weight: 750;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+/* PRINCIPAL */
+main {
+  background-color: white;
+  grid-area: main;
+  height: 565px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+article { 
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+article small {
+  width: 75%;
+  text-align: center;
+  color: grey;
+  margin-bottom: 25%;
+}
+
+.artigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.artigo > h6{
+  color: #ff6b81;
+  /* border: 2px solid rgb(76, 0, 255); */
+  margin: 0;
+
+}
+
+.artigo > h1 {
+  width: 80%;
+  text-transform: capitalize;
+  /* border: 2px solid rgb(76, 0, 255); */
+  text-align: center;
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: 800;
+  
+}
+
+.mural {
+  display: flex;
+  width: 67%;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* border: 2px solid rgb(20, 199, 131); */
+  justify-content: center;  
+}
+
+.mural h5{
+  color: rgb(66, 66, 66);
+}
+
+.blocoo {
+  display: flex;
+  background-color: #ff6b81;
+  width:270px;
+  height: 115px;
+  flex-direction: column;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.bloco {
+  display: flex;
+  width: 270px;
+  height: 115px;
+  background-color: #ff6b81;
+  flex-direction: column;
+  border-radius: 4px;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin: 0; 
+}
+.scopo_mural, h5{ 
+  width: 85%;
+  text-align: left;
+  font-family: tahoma;
+  margin: 0; 
+}
+
+.scopo_mural { 
+  width: 85%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+.mural p{ 
+  color: white;
+  /* border: 2px solid white; */
+  margin: 0;
+  justify-items: center;
+}
+/* RODAPÉ*/
+footer {
+  background-color: #ff6b81;
+  grid-area: rodape;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.centro{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  margin-top: 5%;
+  flex-direction: column;
+}
+ 
+.rodape2{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.pavilhao{
+  text-align: center;
+  width: 50%;
+}
+
