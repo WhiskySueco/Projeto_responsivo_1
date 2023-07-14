@@ -330,6 +330,66 @@ footer {
     width: 90%;
     justify-content: space-between;
   }
+
+}
+
+/* RESPONSIVIDADE SMARTPHONE*/
+
+@media screen and (max-width:750px) {
+  .btn1{
+    display: none;
+  }
+
+  .texto h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .texto h5{
+    font-family: Verdana;
+    font-size: 15px;
+  }
+
+  .btn2{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn_app, .btn_google{
+    width: 200px;
+    margin-bottom: 5%;
+  }
+
+  .mural, .bloco,.blocoo{
+    width: 100%;
+  }
+  
+  .mural{
+    height:1350px;
+  }
+
+  .bloco, .blocoo{
+    width: 90%;
+    height: 200px;
+
+  }
+
+  footer{
+    margin-top: 2%;
+    height: 460px;
+  }
+
+  .tituloRodape{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .rodape2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
